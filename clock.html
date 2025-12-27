@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+
+}
+#mainDiv{
+    width: 100vw;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    gap: 3rem;
+    align-items: center;
+ }
+#innerDiv{
+    background-color:rgba(102, 51, 153, 0.258);
+    color: black;
+    box-shadow: 0 0 10px 2px rgb(65, 15, 32);
+    padding: 2rem;
+    display: flex;
+    gap:1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    border-radius: 3px;
+
+}
+#clock{
+    color:black;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+/* button {
+    padding: 10px 25px;
+    font-size: 18px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+} */
+        
+    </style>
+</head>
+<body>
+    <div id="mainDiv">
+        <h1 id="clock">Digital clock</h1>
+        <div id="innerDiv">
+            <p id="hour">12</p>
+            <p>:</p>
+            <p id="minute">12</p>
+            <p>:</p>
+            <p id="second">12</p>
+        </div>
+        <!-- <button onclick="startclock()">start clock</button> -->
+    </div>
+    
+    
+   <script src="clock.js"></script> 
+</body>
+</html>
